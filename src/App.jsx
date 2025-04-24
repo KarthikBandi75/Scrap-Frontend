@@ -13,7 +13,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.post('http://localhost:5000/api/leads', { query, location });
+      const response = await axios.post(`https://scrap-backend-iwou.onrender.com/api/leads`, { query, location });
       const formattedLeads = response.data.map((lead) => ({
         name: lead.name || 'Unknown',
         address: lead.address || 'Address not available',
