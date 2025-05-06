@@ -7,7 +7,7 @@ function App() {
   const [suggestions, setSuggestions] = useState([]);
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [reviews, setReviews] = useState([]);
-  const [businessInfo, setBusinessInfo] = useState(null);
+  const [businessInfo, setBusinessInfo] = useState(null); 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const suggestionListRef = useRef(null);
